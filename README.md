@@ -34,7 +34,7 @@ Before modelling, I explored the dataset visually to understand its structure:
 
 
 # Key Techniques and Methods
-To build the full classification pipeline, I used:
+To build the full classification pipeline, I used :
 
 • **Label Encoding** — Converted category names to integer labels using `LabelEncoder`.
 
@@ -48,3 +48,16 @@ To build the full classification pipeline, I used:
 
 •**Sparse Matrix Conversion** — Used `.toarray()` to convert TF-IDF sparse.
 
+# Prediction on Unseen Resumes
+Finally, I built a `pred()` function that accepts any raw resume text and returns the predicted job category:
+
+•	Cleans the input text using the same `cleanResume()` pipeline.
+
+•	Vectorizes it using the already-fitted TF-IDF model.
+
+•	Runs prediction through the trained SVC model.
+
+•	Decodes the numeric output back to a human-readable category name using `le.inverse_transform()`.
+
+
+Tested successfully on 3 sample resumes — a **Network Security Engineer**, a **Personal Fitness Trainer**, and a**Data Scientist**.
