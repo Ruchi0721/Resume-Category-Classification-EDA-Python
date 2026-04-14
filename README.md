@@ -4,8 +4,12 @@ Manually screening hundreds of resumes is time-consuming for recruiters. This pr
 **Key highlights:**
 
 •	Cleans raw resume text (removes URLs, hashtags, special characters, emojis)
+
 •	Handles class imbalance via oversampling
+
 •	Converts text to numerical features using TF-IDF
+
 •	Trains and compares KNN and SVM classifiers
+
 •	Provides a ready-to-use pred() function for real-world resume prediction
 
