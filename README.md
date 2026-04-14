@@ -4,7 +4,7 @@ In this project, I used Python, Pandas, Scikit-learn, and Matplotlib/Seaborn to 
 # Data Cleaning
 The project begins with cleaning raw resume text, where I:
 
-•	Removed URLs and hyperlinks using **re.sub('http\S+', ...).**
+•	Removed URLs and hyperlinks using re.sub('http\S+', ...).
 
 •	Stripped social media noise — @mentions, #hashtags, and RT/cc tags.
 
@@ -36,7 +36,7 @@ Before modelling, I explored the dataset visually to understand its structure:
 # Key Techniques and Methods
 To build the full classification pipeline, I used:
 
-•**	Label Encoding** — Converted category names to integer labels using LabelEncoder.
+• **Label Encoding** — Converted category names to integer labels using LabelEncoder.
 
 •	**TF-IDF Vectorization** — Transformed resume text into numerical feature vectors using TfidfVectorizer with English stop word removal.
 
@@ -46,5 +46,5 @@ To build the full classification pipeline, I used:
 
 •	**Model Comparison** — Trained and evaluated both KNN and SVM (SVC) classifiers using accuracy_score.
 
-•**	Sparse Matrix Conversion** — Used .toarray() to convert TF-IDF sparse.
+•**Sparse Matrix Conversion** — Used .toarray() to convert TF-IDF sparse.
 
